@@ -1,0 +1,30 @@
+{
+  "name": "srbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bufferutil": "^3.0.2",
+    "discord.js": "^11.2.1",
+    "ffmpeg": "0.0.4",
+    "http": "0.0.0",
+    "install.js": "^1.0.1",
+    "jsdom": "^11.3.0",
+    "libsodium-wrappers": "^0.5.4",
+    "node-gyp": "^3.6.2",
+    "node-regexp": "^0.1.1",
+    "node-schedule": "^1.2.4",
+    "opusscript": "0.0.3",
+    "rebuild": "^0.1.2",
+    "uws": "^0.14.5",
+    "valid-url": "^1.0.9",
+    "xmlhttprequest": "^1.8.0",
+    "ytdl-core": "^0.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nusmag",
+  "license": "ISC",
+  "description": ""
+}
