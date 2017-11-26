@@ -172,7 +172,7 @@ function analyse(data, type){
             
             notify(runData);
 
-            if(alreadyListed[type].length > 125){
+            if(alreadyListed[type].length > 500){
                 alreadyListed[type].shift();
             }
         }
