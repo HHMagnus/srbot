@@ -153,11 +153,12 @@ var alreadyListed = {
 function analyse(data, type){
     console.log("analysing data from: " + type);
     const dom = new JSDOM(data);
+	var newAlreadyListed = [];
     for(var row of dom.window.document.querySelector("table").rows){
         if(row.cells[8].textContent == "Date") continue;
         let runid = row.cells[8].textContent + ";" + row.cells[7].textContent;
+		newAlreadyListed.push(runid);
         if(!alreadyListed[type].includes(runid)){
-            alreadyListed[type].push(runid);
             var runData = {
                 type: type,
                 obj: row.cells[1].textContent,
@@ -171,12 +172,9 @@ function analyse(data, type){
             };
             
             notify(runData);
-
-            if(alreadyListed[type].length > 500){
-                alreadyListed[type].shift();
-            }
         }
     }
+	alreadyListed[type] = newAlreadyListed;
 }
 
 function notify(data){
