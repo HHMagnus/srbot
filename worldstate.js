@@ -1,3 +1,5 @@
+// THIS FILE IS A WIP TRYING TO GET INFORMATION ABOUT THE WORLD STATE IN WARFRAME
+
 const http = require('http');
 
 const schedule = require('node-schedule');
