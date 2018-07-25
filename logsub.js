@@ -115,7 +115,7 @@ function start(){
 
 function getData(type){
     console.log("getting data: " + type)
-    var hostURL = "origin.warframe.com";
+    var hostURL = "content.warframe.com";
     var pathURL = "/dynamic/trialStats.php";
     if(type == "normal"){
         pathURL = "/dynamic/trialStats.php";
