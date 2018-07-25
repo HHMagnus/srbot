@@ -42,7 +42,7 @@ function start(){
 
 function getData(){
     console.log("getting World State");
-    var hostURL = "origin.warframe.com";
+    var hostURL = "content.warframe.com";
     var pathURL = "/dynamic/worldState.php";
 	
     var options = {
